@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreTracker : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class ScoreTracker : MonoBehaviour
     public GameObject scoreText1;
      public GameObject scoreText2;
      public int goalToWIN;
+    
 
 
 
@@ -19,8 +21,13 @@ public class ScoreTracker : MonoBehaviour
     {
 
         if(this.scorePlayer1 >= this.goalToWIN || this.scorePlayer2 >= this.goalToWIN) {
+            
 
-            Debug.Log("Game Won");
+           
+            
+            
+
+            SceneManager.LoadScene("GameOver");
 
         }
         
@@ -42,5 +49,11 @@ public class ScoreTracker : MonoBehaviour
      public void GoalPlayer2() {
         this.scorePlayer2++;
         
+    }
+    public IEnumerator waiting() {
+        Debug.Log("Started Coroutine at timestamp : " + Time.time);
+
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(5);
     }
 }

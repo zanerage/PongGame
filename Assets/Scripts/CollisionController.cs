@@ -28,14 +28,16 @@ public class CollisionController : MonoBehaviour
 
         }else if(coll.gameObject.name=="LeftWall") {
 
-            Debug.Log("You score the point");
+            
             this.scoreTracker.GoalPlayer2();
+            StartCoroutine(this.ballMovement.StartBall(true));
 
         }
         else if(coll.gameObject.name=="RightWall") {
 
-            Debug.Log("You score the point");
+           
             this.scoreTracker.GoalPlayer1();
+            StartCoroutine(this.ballMovement.StartBall(false));
 
         }
     }

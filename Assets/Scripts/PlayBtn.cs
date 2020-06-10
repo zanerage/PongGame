@@ -9,4 +9,7 @@ public class PlayBtn : MonoBehaviour
     public void PlayButton() {
         SceneManager.LoadScene("Gameplay");
     }
+    public void RestartButton() {
+        SceneManager.LoadScene("Gameplay");
+    }
 }
