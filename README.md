@@ -9,10 +9,7 @@ ping pong clone game try it in your browser
        •Play the old game from 70s pong old school game , challenge the cpu or your friend on a match!<br>
        •In this old Arcade game play versus your friend using one keyboard , player 1 moves with W and S while other player move with arrows UP and DOWN<br>
        •Challenge AI on normal and hard mode test your skills against though opponets!</p><br>
+        Vs friend game First to Score 5 wins
+        Vs cpu / first to score 3 wins!
+        <img src="http://mario-antolovic,com/src/img/selection.png" alt="slika">
        
-       
-       Vs friend game First to Score 5 wins
-       Vs cpu / first to score 3 wins!
-       
-       
-       <img src="http://mario-antolovic.com/src/img/selection.png" alt="slika">
