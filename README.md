@@ -11,5 +11,5 @@ ping pong clone game try it in your browser
        •Challenge AI on normal and hard mode test your skills against though opponets!</p><br>
         Vs friend game First to Score 5 wins
         Vs cpu / first to score 3 wins!
-        <img src="http://mario-antolovic,com/src/img/selection.png" alt="slika">
+        <img src="http://mario-antolovic.com/src/img/selection.png" alt="">
        
