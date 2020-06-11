@@ -20,18 +20,16 @@ public class ScoreTracker : MonoBehaviour
     void Update()
     {
 
-        if(this.scorePlayer1 >= this.goalToWIN || this.scorePlayer2 >= this.goalToWIN) {
-            
+        //if(this.scorePlayer1 >= this.goalToWIN || this.scorePlayer2 >= this.goalToWIN) {
+            if(this.scorePlayer1 >= this.goalToWIN) {
+                SceneManager.LoadScene("YouWon");
+            } else if(this.scorePlayer2 >= this.goalToWIN) {
+               SceneManager.LoadScene("GameOver");
+            }
 
-           
-            
-            
-
-            SceneManager.LoadScene("GameOver");
-
-        }
+      }
         
-    }
+    
     
     private void FixedUpdate() {
         Text uiP1score = this.scoreText1.GetComponent<Text>();

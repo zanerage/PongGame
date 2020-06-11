@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class CpuRacket : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float movementSpeed;
+    public GameObject ball;
+    private void FixedUpdate() {
+        if(Mathf.Abs(this.transform.position.y - ball.transform.position.y)>50) {
+            if(transform.position.y < ball.transform.position.y) {
+                GetComponent<Rigidbody2D>().velocity = new Vector2(0,1) * movementSpeed;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            } else {
+                GetComponent<Rigidbody2D>().velocity = new Vector2(0,-1) * movementSpeed;
+            }
+        }
+            else {
+                GetComponent<Rigidbody2D>().velocity = new Vector2(0,0) * movementSpeed;
+            
+
+        }
     }
 }

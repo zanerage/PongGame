@@ -12,4 +12,16 @@ public class PlayBtn : MonoBehaviour
     public void RestartButton() {
         SceneManager.LoadScene("Gameplay");
     }
+    public void SelectionMenu() {
+        SceneManager.LoadScene("LevelDifficulty");
+    }
+    public void NormalMode() {
+        SceneManager.LoadScene("NormalMode");
+    }
+    public void HardMode() {
+        SceneManager.LoadScene("HardMode");
+    }
+    public void BackToMenu() {
+        SceneManager.LoadScene("Menu");
+    }
 }
